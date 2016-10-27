@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.scss';
 
 const yeomanImage = require('../images/yeoman.png');
 
