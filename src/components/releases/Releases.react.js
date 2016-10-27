@@ -1,4 +1,5 @@
 import React from 'react';
+import './Releases.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './Releases.scss';
 

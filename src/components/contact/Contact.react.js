@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './Contact.scss';
 
