@@ -69,6 +69,8 @@
     "webpack-dev-server": "^2.0.0-beta"
   },
   "dependencies": {
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "html-webpack-plugin": "^2.10.0",
     "normalize.css": "^4.1.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
