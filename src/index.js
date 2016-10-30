@@ -10,7 +10,7 @@ import Home from './components/home/Home.react';
 import Releases from './components/releases/Releases.react';
 import Contact from './components/contact/Contact.react';
 
-// import 'normalize.css/normalize.css';
+import 'normalize.css/normalize.css';
 
 const store = configureStore();
 

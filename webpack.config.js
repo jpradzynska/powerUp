@@ -2,7 +2,8 @@
 
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const postcss = require('postcss-scss');
 
 module.exports = {
   devtool: 'eval',
@@ -15,8 +16,12 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.css$/,
+        loader: ['style', 'css']
+      },
+      {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(['css', 'sass'])
+        loader: ['style', 'css', 'sass']
       },
       {
         test: /\.js$/,
@@ -31,8 +36,10 @@ module.exports = {
       }
     ]
   },
+  postcss: [
+    autoprefixer({ browsers: ['last 2 versions'] })
+  ],
   plugins: [
-    new ExtractTextPlugin('css/[name].css'),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       chunks: ['main'],

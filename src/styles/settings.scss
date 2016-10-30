@@ -1,0 +1,38 @@
+@import "~susy/sass/susy";
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.2;
+
+//MEDIA QUERIES
+$smartphones: 20em;
+$tablets: 48em;
+$desktop: 76em;
+$large-desktop: 114em;
+
+//SUSY
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right
+  ),
+);
+
+//MODULAR SCALE
+$ms-base: 1rem;
+$ms-ratio: 1.5;
+
+$ms-range:
+  1.333   $smartphones,
+  $ms-ratio  $desktop;
+
+//COLORS
+$primary-color: grey;
+$secondary-color: orange;
