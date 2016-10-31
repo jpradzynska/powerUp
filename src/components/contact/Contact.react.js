@@ -9,7 +9,13 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact-component" styleName="contact-component">
-        CONTACT SECTION
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
+        CONTACT SECTION<br />
       </div>
     );
   }

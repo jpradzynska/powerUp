@@ -9,7 +9,15 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-component" styleName="home-component">
-        HOME PAGE! :)
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
+        HOME PAGE! :)<br />
       </div>
     );
   }

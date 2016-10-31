@@ -10,9 +10,11 @@ class About extends React.Component {
     return (
       <div className="about-component" styleName="about-component">
         <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para2">ABOUT SECTION bla blas bla</p>
-        <p className="para3">ABOUT SECTION bla blas bla</p>
-        <p className="para4">ABOUT SECTION bla blas bla</p>
+        <p className="para1">ABOUT SECTION bla blas bla</p>
+        <p className="para1">ABOUT SECTION bla blas bla</p>
+        <p className="para1">ABOUT SECTION bla blas bla</p>
+        <p className="para1">ABOUT SECTION bla blas bla</p>
+        <p className="para1">ABOUT SECTION bla blas bla</p>
       </div>
     );
   }

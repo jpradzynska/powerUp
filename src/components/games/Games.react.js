@@ -9,7 +9,13 @@ class Games extends React.Component {
   render() {
     return (
       <div className="games-component" styleName="games-component">
-        GAMES SECTION
+        GAMES SECTION<br />
+        GAMES SECTION<br />
+        GAMES SECTION<br />
+        GAMES SECTION<br />
+        GAMES SECTION<br />
+        GAMES SECTION<br />
+        GAMES SECTION<br />
       </div>
     );
   }

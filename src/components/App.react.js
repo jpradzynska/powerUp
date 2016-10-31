@@ -7,16 +7,30 @@ class AppComponent extends React.Component {
 
   render() {
     return (
-      <div className="mainMenu">
-        <h1>Power Up Web</h1>
-        <ul>
-          <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><img src={diamondImg} alt="power-up diamond"/></li>
-          <li><NavLink to="/games">Games</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </ul>
+      <div className="wrapper">
+        <header className="header">
+          <div className="leftMainMenu">
+            <nav>
+              <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
+              <li><NavLink to="/about">About</NavLink></li>
+            </nav>
+          </div>
+
+          <div className="diamongMenuIcon">
+            <img src={diamondImg} alt="power-up diamond"/>
+          </div>
+
+          <div className="rightMainMenu">
+            <nav>
+              <li><NavLink to="/games">Games</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
+            </nav>
+          </div>
+        </header>
         {this.props.children}
+        <footer className="footer">
+          Copyright&nbsp;&copy;&nbsp;2016 Power&nbsp;Up&nbsp;Game&nbsp;Studio
+        </footer>
       </div>
     );
   }

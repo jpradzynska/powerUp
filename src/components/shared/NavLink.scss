@@ -1,4 +1,12 @@
-.active {
-  color: red;
-  font-weight: bold;
+@import '../../styles/settings';
+
+.mainMenuLink {
+  color: $primary-color;
+  text-decoration: none;
 }
+
+.active  {
+  color: red;
+}
+
+

@@ -8,7 +8,7 @@ import './NavLink.scss';
 class NavLink extends React.Component {
 
   render() {
-    return <Link {...this.props} activeClassName="active"/>;
+    return <Link {...this.props} className="mainMenuLink" activeClassName="active"/>;
   }
 }
 

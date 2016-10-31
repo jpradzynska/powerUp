@@ -1,32 +1,89 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+@import '../styles/settings';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.mainMenu {
-  width: 40%;
-  margin: 50px auto;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 2px;
-  text-align: center;
+body {
+  margin: 0;
+  //background: $third-color;
+  background: grey;
+}
+
+.wrapper {
+  //width: span(12);
   box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-  ul {
-    list-style-type: none;
+  .header {
+    position: fixed;
+    display: table;
+    top: 0;
+    width: span(12);
+    height: $base-font-size * 5;
+    background: $secondary-color;
+    font-size: $base-font-size * 1.2;
+    border-bottom: 3px solid $primary-color;
 
-    li {
-      display: inline-block;
-      margin: 2%;
+    .leftMainMenu {
+      display: table-cell;
+      vertical-align: middle;
+      width: span(5);
+      nav {
+        text-align: right;
+        list-style-type: none;
+        li {
+          display: inline;
+          padding: 0 $base-font-size;
+        }
+      }
+    }
 
+    .rightMainMenu {
+      display: table-cell;
+      vertical-align: middle;
+      width: span(5);
+      nav {
+        text-align: left;
+        list-style-type: none;
+        li {
+          display: inline;
+          padding: 0 $base-font-size;
+        }
+      }
+    }
+
+    .diamongMenuIcon {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      width: span(2);
+      position: relative;
       img {
-        height: 20px;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-35%);
+        height: $base-font-size * 5;
       }
     }
   }
-  .mojdiv {
-    width: span(6);
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: span(12);
+    background: $secondary-color;
+    text-align: center;
+    font-size: $base-font-size;
+    padding: $base-line-height * 1.5;
+    color: $primary-color;
+    border-top: 1px solid $primary-color;
   }
 }
