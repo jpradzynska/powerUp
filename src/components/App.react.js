@@ -13,7 +13,7 @@ class AppComponent extends React.Component {
           <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><img src={diamondImg} alt="power-up diamond"/></li>
-          <li><NavLink to="/releases">Releases</NavLink></li>
+          <li><NavLink to="/games">Games</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
         {this.props.children}
