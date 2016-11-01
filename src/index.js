@@ -11,7 +11,6 @@ import Games from './components/games/Games.react';
 import Contact from './components/contact/Contact.react';
 
 import 'normalize.css/normalize.css';
-import 'normalize-scss/sass/_normalize.scss';
 
 const store = configureStore();
 

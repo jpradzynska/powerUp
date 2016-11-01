@@ -18,6 +18,7 @@ class Home extends React.Component {
         HOME PAGE! :)<br />
         HOME PAGE! :)<br />
         HOME PAGE! :)<br />
+        <input type="search" />
       </div>
     );
   }
