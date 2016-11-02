@@ -1,0 +1,11 @@
+@import '../../styles/settings';
+
+.about-component {
+  background: linear-gradient(to top, black, white);
+  width: span(10);
+
+  .para1 {
+    font-size: $base-font-size;
+    color: red;
+  }
+}

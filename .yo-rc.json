@@ -1,6 +1,6 @@
 {
   "generator-react-webpack": {
-    "appName": "project-start",
+    "appName": "power-up-web",
     "style": "scss",
     "cssmodules": false,
     "postcss": false,
