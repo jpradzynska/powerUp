@@ -1,97 +1,64 @@
 @import '../../styles/settings';
 @import '../../styles/animation';
 
-.header {
-  position: fixed;
-  z-index: 9999;
-  display: table;
-  top: 0;
-  width: span(12);
-  height: $base-font-size * 5;
-  background: $secondary-color;
-  font-size: $base-font-size * 1.2;
-  border-bottom: 3px solid $primary-color;
-
-  .leftMainMenu {
-    display: table-cell;
-    vertical-align: middle;
-    width: span(5);
-    nav {
-      text-align: right;
-      list-style-type: none;
-      li {
-        display: inline;
-        padding: 0 $base-font-size;
-        transition: all .4s ease-in-out;
-      }
-      li:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .rightMainMenu {
-    display: table-cell;
-    vertical-align: middle;
-    width: span(5);
-    nav {
-      text-align: left;
-      list-style-type: none;
-      li {
-        display: inline;
-        padding: 0 $base-font-size;
-        transition: all .4s ease-in-out;
-      }
-      li:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .diamongMenuIcon {
-    display: table-cell;
-    position: relative;
-    vertical-align: middle;
-    width: span(2);
-    position: relative;
-    img {
-      position: absolute;
-      left:50%;
-      transform: translate(-50%,-35%);
-      height: $base-font-size * 5;
-      animation: arrowBounce 2.5s ease-in-out infinite;
-    }
-  }
+.mainMenuPCHeader {
+  display: none;
 }
 
-@include susy-breakpoint($smartphones) {
-  .wrapper {
-    .header {
-      background: violet;
-    }
-  }
-}
+@include susy-breakpoint($second-breakpoint) {
+  .mainMenuPCHeader {
+    position: fixed;
+    z-index: 9999;
+    display: table;
+    top: 0;
+    width: span(12);
+    height: $base-font-size * 5;
+    background: $secondary-color;
+    font-size: $base-font-size * 1.2;
+    border-bottom: 2px solid $primary-color;
 
-@include susy-breakpoint($tablets) {
-  .wrapper {
-    .header {
-      background: purple;
+    .mainMenu {
+      display: table-cell;
+      vertical-align: middle;
+      width: span(5);
+      nav {
+        list-style-type: none;
+        li {
+          display: inline;
+          padding: 0 $base-font-size;
+          transition: all .4s ease-in-out;
+        }
+        li:hover {
+          opacity: 0.8;
+        }
+      }
     }
-  }
-}
 
-@include susy-breakpoint($desktop) {
-  .wrapper {
-    .header {
-      background: lavender;
+    .leftMainMenu {
+      nav {
+        text-align: right;
+      }
     }
-  }
-}
 
-@include susy-breakpoint($large-desktop) {
-  .wrapper {
-    .header {
-      background: cornflowerblue;
+    .rightMainMenu {
+      nav {
+        text-align: left;
+      }
+    }
+
+    .diamondMenuIcon {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      width: span(2);
+      position: relative;
+      img {
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-35%);
+        height: $base-font-size * 5;
+        //animation: arrowBounce 2.5s ease-in-out infinite;
+      }
     }
   }
 }

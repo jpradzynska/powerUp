@@ -4,10 +4,11 @@ $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.2;
 
 //MEDIA QUERIES
-$smartphones: 20em;
-$tablets: 48em;
-$desktop: 76em;
-$large-desktop: 114em;
+$first-breakpoint: 20em;
+$second-breakpoint: 30em;
+$third-breakpoint: 40em;
+$fourth-breakpoint: 60em;
+$fifth-breakpoint: 114em;
 
 //SUSY
 $susy: (
@@ -30,8 +31,8 @@ $ms-base: 1rem;
 $ms-ratio: 1.5;
 
 $ms-range:
-  1.333   $smartphones,
-  $ms-ratio  $desktop;
+  1.333   $first-breakpoint,
+  $ms-ratio  $fourth-breakpoint;
 
 //COLORS
 $primary-color: #fff;

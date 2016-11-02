@@ -1,7 +1,7 @@
 @import '../../styles/settings';
 @import '../../styles/animation';
 
-.header {
+.mainMenuMobileHeader {
   .mainMenuBtn {
     width: span(12);
     position: fixed;
@@ -12,16 +12,18 @@
     color: $primary-color;
     font-size: $base-font-size * 2.5;
     padding: $base-font-size * 0.5 $base-font-size;
+    cursor: pointer;
+    border-bottom: 1px solid $primary-color;
   }
 
   .mainMenuContent {
     width: span(12);
     position: fixed;
     height: 100vh;
-    background: cadetblue;
+    background: $secondary-color;
     display: table;
-    //transform: translateY(-100%);
-    //transition: transform 0.3s linear;
+    transform: translateY(-100%);
+    transition: transform 1.3s ease-in-out;
     nav {
       text-align: center;
       list-style-type: none;
@@ -32,9 +34,6 @@
         transition: all .4s ease-in-out;
         line-height: $base-line-height * 3;
       }
-      li:hover {
-        opacity: 0.8;
-      }
     }
   }
 
@@ -43,9 +42,8 @@
   }
 }
 
-@include susy-breakpoint($smartphones) {
-  .wrapper {
-    .header {
-    }
+@include susy-breakpoint($second-breakpoint) {
+  .mainMenuMobileHeader {
+    display: none;
   }
 }

@@ -7,17 +7,32 @@ import './MainMenu_mobile.scss';
 // @cssmodules(styles)
 class MainMenuMobile extends React.Component {
 
-  render() {
+  handleSlideMainMenu(e) {
+    const menuContent = e.target.nextElementSibling;
+    if (menuContent.classList.contains('mainMenuOpen')) {
+      menuContent.classList.remove('mainMenuOpen');
+    } else {
+      menuContent.classList.add('mainMenuOpen');
+    }
+  }
 
+  handleHideMainMenu(e) {
+    const menuContent = e.currentTarget;
+    if (menuContent.classList.contains('mainMenuOpen')) {
+      menuContent.classList.remove('mainMenuOpen');
+    }
+  }
+
+  render() {
     const mainMenuIcon = '\u2630';
     return (
-      <header className="header">
-        <div className="mainMenuBtn">
+      <header className="mainMenuMobileHeader">
+        <div className="mainMenuBtn" onClick={e => this.handleSlideMainMenu(e)}>
           {mainMenuIcon}
         </div>
-        <div className="mainMenuContent">
+        <div className="mainMenuContent" onClick={e => this.handleHideMainMenu(e)}>
           <nav>
-            <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
+            <li><span><NavLink to="/" onlyActiveOnIndex>Home</NavLink></span></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/games">Games</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
