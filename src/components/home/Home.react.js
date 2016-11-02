@@ -9,16 +9,29 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-component" styleName="home-component">
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        HOME PAGE! :)<br />
-        <input type="search" />
+        <p className="para1">111111</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">22222222</p>
       </div>
     );
   }

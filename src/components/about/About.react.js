@@ -9,12 +9,29 @@ class About extends React.Component {
   render() {
     return (
       <div className="about-component" styleName="about-component">
-        <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para1">ABOUT SECTION bla blas bla</p>
-        <p className="para1">ABOUT SECTION bla blas bla</p>
+        <p className="para1">111111</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">22222222</p>
       </div>
     );
   }

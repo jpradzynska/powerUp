@@ -2,7 +2,8 @@
 
 .about-component {
   background: linear-gradient(to top, black, white);
-  width: span(10);
+  width: span(12);
+  padding-top: $base-font-size * 5;
 
   .para1 {
     font-size: $base-font-size;

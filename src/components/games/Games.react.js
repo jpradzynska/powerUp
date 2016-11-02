@@ -9,13 +9,20 @@ class Games extends React.Component {
   render() {
     return (
       <div className="games-component" styleName="games-component">
-        GAMES SECTION<br />
-        GAMES SECTION<br />
-        GAMES SECTION<br />
-        GAMES SECTION<br />
-        GAMES SECTION<br />
-        GAMES SECTION<br />
-        GAMES SECTION<br />
+        <p className="para1">111111</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">22222222</p>
       </div>
     );
   }
