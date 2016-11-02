@@ -2,56 +2,50 @@
 @import '../../styles/animation';
 
 .header {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  width: span(12);
-  height: $base-font-size * 5;
-  background: $secondary-color;
-  font-size: $base-font-size * 1.2;
+  .mainMenuBtn {
+    width: span(12);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: $secondary-color;
+    text-align: right;
+    color: $primary-color;
+    font-size: $base-font-size * 2.5;
+    padding: $base-font-size * 0.5 $base-font-size;
+  }
 
-  .leftMainMenu {
+  .mainMenuContent {
+    width: span(12);
+    position: fixed;
+    height: 100vh;
+    background: cadetblue;
+    display: table;
+    //transform: translateY(-100%);
+    //transition: transform 0.3s linear;
     nav {
       text-align: center;
       list-style-type: none;
+      display: table-cell;
+      vertical-align: middle;
       li {
+        font-size: $base-font-size * 2;
         transition: all .4s ease-in-out;
+        line-height: $base-line-height * 3;
       }
       li:hover {
         opacity: 0.8;
       }
     }
   }
+
+  .mainMenuOpen {
+    transform: translateY(0);
+  }
 }
 
 @include susy-breakpoint($smartphones) {
   .wrapper {
     .header {
-      background: violet;
-    }
-  }
-}
-
-@include susy-breakpoint($tablets) {
-  .wrapper {
-    .header {
-      background: purple;
-    }
-  }
-}
-
-@include susy-breakpoint($desktop) {
-  .wrapper {
-    .header {
-      background: lavender;
-    }
-  }
-}
-
-@include susy-breakpoint($large-desktop) {
-  .wrapper {
-    .header {
-      background: cornflowerblue;
     }
   }
 }

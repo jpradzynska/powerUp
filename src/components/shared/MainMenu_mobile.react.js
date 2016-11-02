@@ -8,14 +8,21 @@ import './MainMenu_mobile.scss';
 class MainMenuMobile extends React.Component {
 
   render() {
+
+    const mainMenuIcon = '\u2630';
     return (
       <header className="header">
-        <nav>
-          <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/games">Games</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </nav>
+        <div className="mainMenuBtn">
+          {mainMenuIcon}
+        </div>
+        <div className="mainMenuContent">
+          <nav>
+            <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/games">Games</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+          </nav>
+        </div>
       </header>
     );
   }
