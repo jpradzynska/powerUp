@@ -22,42 +22,4 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: span(12);
-    background-image: url('../images/footer/footer-max640.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
-    text-align: center;
-    font-size: $base-font-size;
-    padding: $base-line-height * 1.1;
-    color: $primary-color;
-  }
-}
-
-@include susy-breakpoint($third-breakpoint) {
-  .wrapper {
-    .footer {
-      background-image: url('../images/footer/footer-640-960.jpg');
-    }
-  }
-}
-
-@include susy-breakpoint($fourth-breakpoint) {
-  .wrapper {
-    .footer {
-      background-image: url('../images/footer/footer-more-than960.jpg');
-    }
-  }
-}
-
-@include susy-breakpoint($fifth-breakpoint) {
-  .wrapper {
-    .footer {
-      background-size: 100% 100%;
-    }
-  }
 }
