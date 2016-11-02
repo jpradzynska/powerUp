@@ -2,6 +2,7 @@ import React from 'react';
 import MainMenuPc from './shared/MainMenu_PC.react';
 import MainMenuMobile from './shared/MainMenu_mobile.react';
 import Footer from './shared/Footer.react';
+
 import './App.scss';
 
 class AppComponent extends React.Component {

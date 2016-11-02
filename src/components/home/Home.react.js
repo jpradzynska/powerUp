@@ -31,6 +31,16 @@ class Home extends React.Component {
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">SECTION bla blas bla</p>
         <p className="para1">22222222</p>
       </div>
     );

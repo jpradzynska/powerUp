@@ -1,17 +1,23 @@
 @import '../../styles/settings';
 
 .footer {
-  //position: absolute;
-  //bottom: 0;
-  width: span(12);
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
   background-image: url('../../images/footer/footer-max640.jpg');
   background-repeat: no-repeat;
   background-position: center;
   overflow-x: hidden;
   text-align: center;
   font-size: $base-font-size;
-  padding: $base-line-height * 1.1;
   color: $primary-color;
+  display: table;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 @include susy-breakpoint($third-breakpoint) {

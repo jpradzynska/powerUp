@@ -9,12 +9,14 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact-component" styleName="contact-component">
-        <p className="para1">111111</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">22222222</p>
+        <div>
+          <p className="para1">111111</p>
+          <p className="para1">SECTION bla blas bla</p>
+          <p className="para1">SECTION bla blas bla</p>
+          <p className="para1">SECTION bla blas bla</p>
+          <p className="para1">SECTION bla blas bla</p>
+          <p className="para1">22222222</p>
+        </div>
       </div>
     );
   }

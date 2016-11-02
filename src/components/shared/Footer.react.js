@@ -9,7 +9,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        Copyright&nbsp;&copy;&nbsp;2016 Power&nbsp;Up&nbsp;Game&nbsp;Studio
+        <span>Copyright&nbsp;&copy;&nbsp;2016 Power&nbsp;Up&nbsp;Game&nbsp;Studio</span>
       </footer>
     );
   }
