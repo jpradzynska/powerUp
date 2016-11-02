@@ -1,10 +1,12 @@
 @import '../../styles/settings';
 
 .about-component {
-  background: linear-gradient(to top, black, white);
   width: span(12);
   padding-top: $base-font-size * 5;
   padding-bottom: 80px;
+  background-image: url('../../images/bcg-640-960.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 
   .para1 {
     font-size: $base-font-size;
