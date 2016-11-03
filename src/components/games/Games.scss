@@ -1,10 +1,31 @@
 @import '../../styles/settings';
 
 .games-component {
-  width: span(12);
-  padding-top: $base-font-size * 5;
-  padding-bottom: 80px;
-  background-image: url('../../images/games/bcg-landing-below-960.jpg');
+  background-image: url('../../images/games/bcg-games-below-640.jpg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .games-component {
+    background-image: url('../../images/games/bcg-games-640-960.jpg');
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .games-component {
+    background-image: url('../../images/games/bcg-games-960-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .games-component {
+    background-image: url('../../images/games/bcg-games-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .games-component {
+    background-size: 100% 100%;
+  }
 }

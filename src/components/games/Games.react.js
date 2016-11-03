@@ -8,7 +8,7 @@ class Games extends React.Component {
 
   render() {
     return (
-      <div className="games-component" styleName="games-component">
+      <div className="component games-component">
         <p className="para1">111111</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>

@@ -28,11 +28,17 @@
 
 @include susy-breakpoint($fourth-breakpoint) {
   .footer {
-    background-image: url('../../images/footer/bcg-footer-over-960.jpg');
+    background-image: url('../../images/footer/bcg-footer-960-1280.jpg');
   }
 }
 
 @include susy-breakpoint($fifth-breakpoint) {
+  .footer {
+    background-image: url('../../images/footer/bcg-footer-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
   .footer {
     background-size: 100% 100%;
   }

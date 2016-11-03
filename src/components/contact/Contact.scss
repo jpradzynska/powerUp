@@ -1,18 +1,10 @@
 @import '../../styles/settings';
 
 .contact-component {
-  width: span(12);
-  padding-top: $base-font-size * 5;
-  padding-bottom: 80px;
   background-image: url('../../images/contact/bcg-below-640.jpg');
   background-repeat: no-repeat;
   background-position: center;
-
-  > div {
-    height: 100%;
-  }
 }
-
 
 @include susy-breakpoint($third-breakpoint) {
   .contact-component {
@@ -20,14 +12,20 @@
   }
 }
 
-//@include susy-breakpoint($fourth-breakpoint) {
-//  .contact-component {
-//    background-image: url('../../images/footer/bcg-footer-over-960.jpg');
-//  }
-//}
-//
-//@include susy-breakpoint($fifth-breakpoint) {
-//  .contact-component {
-//    background-size: 100% 100%;
-//  }
-//}
+@include susy-breakpoint($fourth-breakpoint) {
+  .contact-component {
+    background-image: url('../../images/contact/bcg-960-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .contact-component {
+    background-image: url('../../images/contact/bcg-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .contact-component {
+    background-size: 100% 100%;
+  }
+}

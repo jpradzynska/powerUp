@@ -1,10 +1,31 @@
 @import '../../styles/settings';
 
 .home-component {
-  width: span(12);
-  padding-top: $base-font-size * 5;
-  padding-bottom: 80px;
-  background-image: url('../../images/home/bcg-home.jpg');
+  background-image: url('../../images/home/bcg-home-below-640.jpg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@include susy-breakpoint($third-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-640-960.jpg');
+  }
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-960-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+  .home-component {
+    background-image: url('../../images/home/bcg-home-over-1280.jpg');
+  }
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+  .home-component {
+    background-size: 100% 100%;
+  }
 }

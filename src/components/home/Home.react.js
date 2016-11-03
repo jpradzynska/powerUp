@@ -8,7 +8,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-component" styleName="home-component">
+      <div className="component home-component">
         <p className="para1">111111</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>

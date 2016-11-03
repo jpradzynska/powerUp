@@ -8,28 +8,24 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact-component" styleName="contact-component">
+      <div className="component contact-component">
         <div>
-          <p className="para1">111111</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">SECTION bla blas bla</p>
-          <p className="para1">22222222</p>
+          <img alt="Power Up Logo" src="../../images/power-up-logo.svg" />
+        </div>
+        <p>Contact</p>
+        <div>
+          <img alt="triangles" src="../../images/triangles-left.svg" />
+          <p>INFO</p>
+          <img alt="triangles" src="../../images/triangles-right.svg" />
+        </div>
+        <div>
+          <p>Address:</p>
+          <p>ul. Bora Komorowskiego 19B</p>
+          <p>80-462 Gdańsk</p>
+          <p>Poland</p>
+          <p>Press / Business contact</p>
+          <p>contact@powerupgamestudio.com</p>
+          <img alt="e-mail button" src="../../images/contact/cta-email.svg" />
         </div>
       </div>
     );
