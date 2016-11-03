@@ -1,5 +1,4 @@
 @import '../../styles/settings';
-@import '../../styles/animation';
 
 .mainMenuPCHeader {
   display: none;
@@ -57,7 +56,6 @@
         left:50%;
         transform: translate(-50%,-35%);
         height: $base-font-size * 5;
-        //animation: arrowBounce 2.5s ease-in-out infinite;
       }
     }
   }

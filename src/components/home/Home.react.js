@@ -16,10 +16,15 @@ class Home extends React.Component {
     const HEADER_TEXT_2 = 'Presented by';
     return (
       <div className="component home-component">
+        <div className="mojdiv1">xxx</div>
         <HeaderComponent headerText={HEADER_TEXT_1} />
+        <img alt="arrow" className="arrowDown" src="../../images/home/scroll.svg" />
+        <div className="mojdiv2">xxx</div>
         <HeaderComponent headerText={HEADER_TEXT_2} />
+        <div className="mojdiv3">xxx</div>
         <LogoComponent />
         <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+        <div className="mojdiv4">xxx</div>
       </div>
     );
   }
