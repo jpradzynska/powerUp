@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoComponent from '../shared/LogoComponent.react';
 import './Home.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './Home.scss';
@@ -33,6 +34,7 @@ class Home extends React.Component {
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
+        <LogoComponent />
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>

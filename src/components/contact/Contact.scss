@@ -5,31 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  .section-logo {
-    text-align: center;
-    margin: $base-font-size * 8 auto;
-    img {
-      width: span(8);
-      height: auto;
-    }
-  }
-
   .section-contact {
     text-align: center;
     p {
 
-    }
-  }
-
-  .section-info {
-    text-align: center;
-    margin: $base-font-size * 5 auto $base-font-size auto;
-    img {
-      width: span(3);
-      height: auto;
-    }
-    span {
-      padding: 0 $base-font-size * 2;
     }
   }
 
@@ -45,72 +24,21 @@
         }
       }
     }
-
-    .email-btn {
-      margin: $base-font-size * 4 auto;
-      img {
-        width: span(7);
-        cursor: pointer;
-        transition: background-color 0.5s ease;
-      }
-      img:hover {
-        background-color: #F56E00;
-      }
-    }
   }
 }
 
 @include susy-breakpoint($second-breakpoint) {
-  .contact-component {
-    .section-logo {
-      img {
-        width: span(7);
-      }
-    }
-
-    .section-info {
-      img {
-        width: span(2);
-      }
-    }
-  }
 }
 
 @include susy-breakpoint($third-breakpoint) {
   .contact-component {
     background-image: url('../../images/contact/bcg-640-960.jpg');
-
-    .section-logo {
-      img {
-        width: span(5);
-      }
-    }
-
-    .contact-address {
-      .email-btn {
-        img {
-          width: span(4);
-        }
-      }
-    }
   }
 }
 
 @include susy-breakpoint($fourth-breakpoint) {
   .contact-component {
     background-image: url('../../images/contact/bcg-960-1280.jpg');
-
-    .section-logo {
-      img {
-        width: span(4);
-      }
-    }
-
-    .section-info {
-      img {
-        width: span(1);
-      }
-    }
 
     .contact-address {
       .address, .press {
@@ -124,33 +52,11 @@
 @include susy-breakpoint($fifth-breakpoint) {
   .contact-component {
     background-image: url('../../images/contact/bcg-over-1280.jpg');
-
-    .section-logo {
-      img {
-        width: span(3);
-      }
-    }
-
-    .contact-address {
-      .email-btn {
-        img {
-          width: span(3);
-        }
-      }
-    }
   }
 }
 
 @include susy-breakpoint($sixth-breakpoint) {
   .contact-component {
     background-size: 100% 100%;
-
-    .contact-address {
-      .email-btn {
-        img {
-          width: span(2);
-        }
-      }
-    }
   }
 }

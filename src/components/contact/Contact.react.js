@@ -1,4 +1,7 @@
 import React from 'react';
+import ButtonComponent from '../shared/ButtonComponent.react';
+import LogoComponent from '../shared/LogoComponent.react';
+import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './Contact.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './Contact.scss';
@@ -7,21 +10,19 @@ import './Contact.scss';
 class Contact extends React.Component {
 
   render() {
+    // write the title here
+    const TRIANGLE_TITLE = 'INFO';
+    const BUTTON_HREF = 'mailto:contact@powerupgamestudio.com';
+    const BUTTON_IMG = '../../images/contact/cta-email.svg';
     return (
       <div className="component contact-component">
-        <div className="section-logo">
-          <img alt="Power Up Logo" src="../../images/power-up-logo.svg" />
-        </div>
+        <LogoComponent />
 
         <div className="section-contact">
           <p>Contact</p>
         </div>
 
-        <div className="section-info">
-          <img alt="triangles" className="img-left" src="../../images/triangles-left.svg" />
-          <span>INFO</span>
-          <img alt="triangles" className="img-right" src="../../images/triangles-left.svg" />
-        </div>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE} />
 
         <div className="contact-address">
           <div className="address">
@@ -33,14 +34,8 @@ class Contact extends React.Component {
           <div className="press">
             <p><span>Press / Business contact</span></p>
             <p>contact@powerupgamestudio.com</p>
-            <br />
-            <br />
           </div>
-          <div className="email-btn">
-            <a href="mailto:contact@powerupgamestudio.com" title="Contact us">
-              <img alt="e-mail button" src="../../images/contact/cta-email.svg" />
-            </a>
-          </div>
+          <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
         </div>
       </div>
     );

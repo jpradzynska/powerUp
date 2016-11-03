@@ -1,4 +1,7 @@
 import React from 'react';
+import ButtonComponent from '../shared/ButtonComponent.react';
+import LogoComponent from '../shared/LogoComponent.react';
+import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './Games.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './Games.scss';
@@ -7,14 +10,25 @@ import './Games.scss';
 class Games extends React.Component {
 
   render() {
+    // write the title here
+    const TRIANGLE_TITLE_1 = 'JUMPING JOE!';
+    const TRIANGLE_TITLE_2 = 'ORBITRON ARCADE';
+    const TRIANGLE_TITLE_3 = 'CONTACT';
+    const BUTTON_HREF = '#';
+    const BUTTON_IMG = '../../images/games/cta-contact.svg';
     return (
       <div className="component games-component">
+        <LogoComponent />
         <p className="para1">111111</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3}/>
+        <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>

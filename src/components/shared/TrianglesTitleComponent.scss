@@ -1,0 +1,41 @@
+@import '../../styles/settings';
+
+.triangles-component {
+  text-align: center;
+  margin: $base-font-size * 5 auto $base-font-size auto;
+  img {
+    width: span(3);
+    height: auto;
+  }
+  span {
+    padding: 0 $base-font-size * 2;
+  }
+}
+
+@include susy-breakpoint($first-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+  .triangles-component {
+    img {
+      width: span(2);
+    }
+  }
+}
+
+@include susy-breakpoint($third-breakpoint) {
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+  .triangles-component {
+    img {
+      width: span(1);
+    }
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+}
