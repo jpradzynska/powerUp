@@ -15,7 +15,7 @@ class TrianglesTitleComponent extends React.Component {
       <div className="triangles-component">
         <img alt="triangles" className="img-left" src="../../images/triangles-left.svg" />
         <span>{this.props.titleText}</span>
-        <img alt="triangles" className="img-right" src="../../images/triangles-left.svg" />
+        <img alt="triangles" className="img-right" src="../../images/triangles-right.svg" />
       </div>
     );
   }

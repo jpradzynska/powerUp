@@ -16,6 +16,7 @@
     background-color: $third-color;
     text-align: center;
     padding: $base-font-size 0;
+    margin-bottom: $base-font-size * 15;
     .address, .press {
       margin: $base-font-size * 4 auto;
       p {
@@ -42,6 +43,7 @@
 
     .contact-address {
       .address, .press {
+        margin: $base-font-size auto;
         display: inline-block;
         width: span(6);
       }

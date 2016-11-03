@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonComponent from '../shared/ButtonComponent.react';
+import EmailButtonComponent from '../shared/EmailButtonComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './Contact.scss';
@@ -35,7 +35,7 @@ class Contact extends React.Component {
             <p><span>Press / Business contact</span></p>
             <p>contact@powerupgamestudio.com</p>
           </div>
-          <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
+          <EmailButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
         </div>
       </div>
     );

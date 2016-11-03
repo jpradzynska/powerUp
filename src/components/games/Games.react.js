@@ -14,7 +14,7 @@ class Games extends React.Component {
     const TRIANGLE_TITLE_1 = 'JUMPING JOE!';
     const TRIANGLE_TITLE_2 = 'ORBITRON ARCADE';
     const TRIANGLE_TITLE_3 = 'CONTACT';
-    const BUTTON_HREF = '#';
+    const BUTTON_HREF = '/contact';
     const BUTTON_IMG = '../../images/games/cta-contact.svg';
     return (
       <div className="component games-component">

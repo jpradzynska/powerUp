@@ -4,7 +4,7 @@
   text-align: center;
   margin: $base-font-size * 5 auto $base-font-size auto;
   img {
-    width: span(3);
+    width: span(2);
     height: auto;
   }
   span {
@@ -24,6 +24,11 @@
 }
 
 @include susy-breakpoint($third-breakpoint) {
+  .triangles-component {
+    img {
+      width: span(1);
+    }
+  }
 }
 
 @include susy-breakpoint($fourth-breakpoint) {

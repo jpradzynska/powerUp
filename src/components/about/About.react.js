@@ -14,7 +14,7 @@ class About extends React.Component {
     const TRIANGLE_TITLE_1 = 'FACT SHEET';
     const TRIANGLE_TITLE_2 = 'OUR TEAM';
     const TRIANGLE_TITLE_3 = 'RELEASES';
-    const BUTTON_HREF = '#';
+    const BUTTON_HREF = '/games';
     const BUTTON_IMG = '../../images/about/cta-projects.svg';
     return (
       <div className="component about-component">
