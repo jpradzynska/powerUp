@@ -2,18 +2,40 @@
 @import '../../styles/animation';
 
 .mainMenuMobileHeader {
-  .mainMenuBtn {
+  .mainMenuLabel {
     width: span(12);
+    height: $base-font-size * 5;
     position: fixed;
     top: 0;
     z-index: 9999;
     background: $secondary-color;
-    text-align: right;
-    color: $primary-color;
-    font-size: $base-font-size * 2.5;
-    padding: $base-font-size * 0.5 $base-font-size;
-    cursor: pointer;
     border-bottom: 1px solid $primary-color;
+
+    .mainMenuImg {
+      width: span(9);
+      height: 100%;
+      display: inline-block;
+      text-align: left;
+
+      img {
+        height: $base-font-size * 3;
+        width: auto;
+        margin: $base-font-size * 0.5 0 0 $base-font-size;
+      }
+    }
+
+    .mainMenuBtn {
+      width: span(3);
+      display: inline-block;
+      text-align: right;
+
+      span {
+        cursor: pointer;
+        color: $primary-color;
+        font-size: $base-font-size * 3.0;
+        padding-right: $base-font-size * 1.5;
+      }
+    }
   }
 
   .mainMenuContent {

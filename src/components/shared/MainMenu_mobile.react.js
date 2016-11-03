@@ -8,7 +8,7 @@ import './MainMenu_mobile.scss';
 class MainMenuMobile extends React.Component {
 
   handleSlideMainMenu(e) {
-    const menuContent = e.target.nextElementSibling;
+    const menuContent = e.target.closest('.mainMenuLabel').nextElementSibling;
     if (menuContent.classList.contains('mainMenuOpen')) {
       menuContent.classList.remove('mainMenuOpen');
     } else {
@@ -27,8 +27,13 @@ class MainMenuMobile extends React.Component {
     const mainMenuIcon = '\u2630';
     return (
       <header className="mainMenuMobileHeader">
-        <div className="mainMenuBtn" onClick={e => this.handleSlideMainMenu(e)}>
-          {mainMenuIcon}
+        <div className="mainMenuLabel">
+          <div className="mainMenuImg">
+            <img alt="Power Up Logo" src="../../images/power-up-logo.svg" />
+          </div>
+          <div className="mainMenuBtn">
+            <span onClick={e => this.handleSlideMainMenu(e)}>{mainMenuIcon}</span>
+          </div>
         </div>
         <div className="mainMenuContent" onClick={e => this.handleHideMainMenu(e)}>
           <nav>
