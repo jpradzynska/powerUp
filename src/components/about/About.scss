@@ -4,7 +4,7 @@
   width: span(12);
   padding-top: $base-font-size * 5;
   padding-bottom: 80px;
-  background-image: url('../../images/bcg-640-960.jpg');
+  background-image: url('../../images/about/bcg-640-960.jpg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -13,3 +13,22 @@
     color: red;
   }
 }
+
+
+@include susy-breakpoint($third-breakpoint) {
+  .about-component {
+    background-image: url('../../images/about/bcg-640-960.jpg');
+  }
+}
+
+//@include susy-breakpoint($fourth-breakpoint) {
+//  .about-component {
+//    background-image: url('../../images/footer/bcg-footer-over-960.jpg');
+//  }
+//}
+//
+//@include susy-breakpoint($fifth-breakpoint) {
+//  .about-component {
+//    background-size: 100% 100%;
+//  }
+//}
