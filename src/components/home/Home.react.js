@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonComponent from '../shared/ButtonComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import './Home.scss';
 // import cssmodules from 'react-css-modules';
@@ -8,6 +9,8 @@ import './Home.scss';
 class Home extends React.Component {
 
   render() {
+    const BUTTON_HREF = '/games';
+    const BUTTON_IMG = '../../images/home/cta-projects.svg';
     return (
       <div className="component home-component">
         <p className="para1">111111</p>
@@ -35,15 +38,7 @@ class Home extends React.Component {
         <p className="para1">SECTION bla blas bla</p>
         <p className="para1">SECTION bla blas bla</p>
         <LogoComponent />
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">22222222</p>
+        <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
       </div>
     );
   }
