@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonComponent from '../shared/ButtonComponent.react';
+import HeaderComponent from '../shared/HeaderComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import TrianglesTitleComponent from '../shared/TrianglesTitleComponent.react';
 import './Games.scss';
@@ -16,9 +17,11 @@ class Games extends React.Component {
     const TRIANGLE_TITLE_3 = 'CONTACT';
     const BUTTON_HREF = '/contact';
     const BUTTON_IMG = '../../images/games/cta-contact.svg';
+    const HEADER_TEXT = 'Releases';
     return (
       <div className="component games-component">
         <LogoComponent />
+        <HeaderComponent headerText={HEADER_TEXT} />
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
@@ -28,7 +31,7 @@ class Games extends React.Component {
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
         <br />
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1} />
         <br />
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
@@ -39,7 +42,7 @@ class Games extends React.Component {
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
         <br />
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2} />
         <br />
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
@@ -49,7 +52,7 @@ class Games extends React.Component {
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>
         <br />
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3}/>
+        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3} />
         <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
         <p className="para1">Lorem Ipsum</p>
         <p className="para1">Lorem Ipsum</p>

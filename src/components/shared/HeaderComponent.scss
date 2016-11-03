@@ -1,0 +1,30 @@
+@import '../../styles/settings';
+
+.header-component {
+  text-align: center;
+  margin: $base-font-size * 5 auto;
+  p {
+  }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+}
+
+@include susy-breakpoint($second-breakpoint) {
+}
+
+@include susy-breakpoint($third-breakpoint) {
+
+}
+
+@include susy-breakpoint($fourth-breakpoint) {
+
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
+
+}
+
+@include susy-breakpoint($sixth-breakpoint) {
+
+}

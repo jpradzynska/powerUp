@@ -3,31 +3,27 @@
 .contact-component {
   background-image: url('../../images/contact/bcg-below-640.jpg');
 
-  .section-contact {
-    text-align: center;
-    p {
-
-    }
-  }
-
   .contact-address {
     background-color: $third-color;
     text-align: center;
     padding: $base-font-size 0;
     margin-bottom: $base-font-size * 15;
-    display: table;
-    width: span(12);
-    .address, .press {
-      margin: $base-font-size * 4 auto;
-      display: table-cell;
-      vertical-align: top;
-      p {
-        span {
-          color: $fourth-color;
+
+    > div {
+
+      .address, .press {
+        margin: $base-font-size * 4 auto;
+        p {
+          span {
+            color: $fourth-color;
+          }
         }
       }
     }
   }
+}
+
+@include susy-breakpoint($fifth-breakpoint) {
 }
 
 @include susy-breakpoint($second-breakpoint) {
@@ -44,10 +40,18 @@
     background-image: url('../../images/contact/bcg-960-1280.jpg');
 
     .contact-address {
-      .address, .press {
-        margin: $base-font-size auto;
-        display: inline-block;
-        width: span(6);
+      margin: $base-font-size auto;
+      display: inline-block;
+      width: span(12);
+
+      > div {
+        display: table;
+        width: span(12);
+
+        .address, .press {
+          display: table-cell;
+          vertical-align: top;
+        }
       }
     }
   }

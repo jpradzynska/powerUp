@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonComponent from '../shared/ButtonComponent.react';
+import HeaderComponent from '../shared/HeaderComponent.react';
 import FactComponent from '../shared/FactComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
 import TeamMemberComponent from '../shared/TeamMemberComponent.react';
@@ -18,6 +19,7 @@ class About extends React.Component {
     const TRIANGLE_TITLE_3 = 'RELEASES';
     const BUTTON_HREF = '/games';
     const BUTTON_IMG = '../../images/about/cta-projects.svg';
+    const HEADER_TEXT = 'About Power Up Game Studio';
     const person1 = {
       imgSrc: '../../images/about/portrait-patryk.svg',
       name: 'Patryk',
@@ -52,6 +54,7 @@ class About extends React.Component {
     return (
       <div className="component about-component">
         <LogoComponent />
+        <HeaderComponent headerText={HEADER_TEXT} />
         <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
         <div className="facts">
           <FactComponent data={fact1}><span>Power UP Game Studio</span><br />Based in Gdańsk, Poland</FactComponent>

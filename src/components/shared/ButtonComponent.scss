@@ -3,6 +3,8 @@
 .button-component {
   margin: $base-font-size * 3 auto;
   text-align: center;
+  display: block;
+  width: span(12);
   img {
     width: span(7);
     cursor: pointer;
