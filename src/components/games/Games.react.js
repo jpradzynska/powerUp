@@ -19,24 +19,44 @@ class Games extends React.Component {
     return (
       <div className="component games-component">
         <LogoComponent />
-        <p className="para1">111111</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <br />
         <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
+        <br />
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <br />
         <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>
+        <br />
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <br />
         <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3}/>
         <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">SECTION bla blas bla</p>
-        <p className="para1">22222222</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
+        <p className="para1">Lorem Ipsum</p>
       </div>
     );
   }

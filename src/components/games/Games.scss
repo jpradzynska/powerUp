@@ -2,8 +2,7 @@
 
 .games-component {
   background-image: url('../../images/games/bcg-games-below-640.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
 }
 
 @include susy-breakpoint($third-breakpoint) {

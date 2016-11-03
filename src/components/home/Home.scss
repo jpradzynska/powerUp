@@ -2,8 +2,6 @@
 
 .home-component {
   background-image: url('../../images/home/bcg-home-below-640.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @include susy-breakpoint($third-breakpoint) {

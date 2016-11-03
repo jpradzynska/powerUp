@@ -24,7 +24,7 @@
 @include susy-breakpoint($third-breakpoint) {
   .teamMember-component {
     img {
-      width: span(4);
+      width: span(3);
     }
   }
 }
@@ -41,6 +41,11 @@
 }
 
 @include susy-breakpoint($fifth-breakpoint) {
+  .teamMember-component {
+    img {
+      width: span(4);
+    }
+  }
 }
 
 @include susy-breakpoint($sixth-breakpoint) {
