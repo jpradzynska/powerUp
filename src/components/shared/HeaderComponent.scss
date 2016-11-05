@@ -1,8 +1,10 @@
 @import '../../styles/settings';
 
 .header-component {
+  margin: $base-font-size * 3 auto;
   text-align: center;
-  margin: $base-font-size * 5 auto;
+  display: block;
+  width: span(12);
   p {
   }
 }

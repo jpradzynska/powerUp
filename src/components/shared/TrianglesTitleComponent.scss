@@ -1,8 +1,10 @@
 @import '../../styles/settings';
 
 .triangles-component {
+  margin: $base-font-size auto;
   text-align: center;
-  margin: $base-font-size * 5 auto $base-font-size auto;
+  display: block;
+  width: span(12);
   img {
     width: span(2);
     height: auto;
@@ -32,11 +34,6 @@
 }
 
 @include susy-breakpoint($fourth-breakpoint) {
-  .triangles-component {
-    img {
-      width: span(1);
-    }
-  }
 }
 
 @include susy-breakpoint($fifth-breakpoint) {

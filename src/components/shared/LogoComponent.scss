@@ -1,8 +1,10 @@
 @import '../../styles/settings';
 
 .logo-component {
+  margin: $base-font-size * 6 auto;
   text-align: center;
-  margin: $base-font-size * 8 auto;
+  display: block;
+  width: span(12);
   img {
     width: span(8);
     height: auto;
