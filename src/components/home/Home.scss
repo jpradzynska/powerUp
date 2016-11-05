@@ -9,24 +9,11 @@
     height: $base-font-size * 2.5;
     cursor: pointer;
   }
-  .mojdiv1 {
-    opacity: 0;
-  }
-  .mojdiv2 {
-    opacity: 0;
-  }
-  .mojdiv3 {
-    opacity: 0;
-  }
-  .mojdiv4 {
-    opacity: 0;
-  }
 }
 
 @include susy-breakpoint($third-breakpoint) {
   .home-component {
     background-image: url('../../images/home/bcg-home-640-960.jpg');
-
   }
 }
 
@@ -38,21 +25,17 @@
       height: $base-font-size * 2.5;
       cursor: pointer;
     }
-    .mojdiv1 {
-      opacity: 0;
-      margin: $base-font-size * 12;
+    .header1 {
+      margin: $base-font-size * 24 auto 0 auto;
     }
-    .mojdiv2 {
-      opacity: 0;
-      margin: $base-font-size * 32;
+    .header2 {
+      margin: $base-font-size * 55 auto 0 auto;
     }
-    .mojdiv3 {
-      opacity: 0;
-      margin: $base-font-size * 23;
+    .logo {
+      margin: $base-font-size * 50 auto 0 auto;
     }
-    .mojdiv4 {
-      opacity: 0;
-      margin: $base-font-size * 8;
+    .btn {
+      margin-bottom: $base-font-size * 15;
     }
   }
 }

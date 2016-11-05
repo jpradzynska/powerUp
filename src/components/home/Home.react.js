@@ -33,16 +33,26 @@ class Home extends React.Component {
         </OnMobile>
 
         <OnDesktop>
-          <div className="mojdiv1">xxx</div>
-          <HeaderComponent headerText={HEADER_TEXT_1} />
+          <div className="header1">
+            <HeaderComponent headerText={HEADER_TEXT_1} />
+          </div>
+
           <img alt="arrow" className="arrowDown" src="../../images/home/scroll.svg" />
-          <div className="mojdiv2">xxx</div>
-          <HeaderComponent headerText={HEADER_TEXT_2} />
+
+          <div className="header2">
+            <HeaderComponent headerText={HEADER_TEXT_2} />
+          </div>
+
           <img alt="arrow" className="arrowDown" src="../../images/home/scroll.svg" />
-          <div className="mojdiv3">xxx</div>
-          <LogoComponent />
-          <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
-          <div className="mojdiv4">xxx</div>
+
+          <div className="logo">
+            <LogoComponent />
+          </div>
+
+          <div className="btn">
+            <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+          </div>
+
         </OnDesktop>
       </div>
     );
