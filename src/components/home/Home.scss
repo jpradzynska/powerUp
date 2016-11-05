@@ -3,11 +3,19 @@
 
 .home-component {
   background-image: url('../../images/home/bcg-home-below-640.jpg');
+  background-size: cover;
   text-align: center;
-  .arrowDown {
-    animation: arrowBounce 2.5s ease-in-out infinite;
-    height: $base-font-size * 2.5;
-    cursor: pointer;
+
+  .mobile-comp {
+    height: calc(100vh - 160px);
+  }
+
+  .logo-component {
+    margin: 0 auto $base-font-size * 3 auto;
+  }
+
+  .header-component {
+    margin: 0 auto $base-font-size * 4 auto;
   }
 }
 
@@ -20,6 +28,9 @@
 @include susy-breakpoint($fourth-breakpoint) {
   .home-component {
     background-image: url('../../images/home/bcg-home-960-1280.jpg');
+    .logo-component, .header-component {
+      margin: $base-font-size * 8 auto;
+    }
     .arrowDown {
       animation: arrowBounce 2.5s ease-in-out infinite;
       height: $base-font-size * 2.5;

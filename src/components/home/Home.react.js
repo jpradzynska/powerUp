@@ -27,9 +27,11 @@ class Home extends React.Component {
     return (
       <div className="component home-component">
         <OnMobile>
-          <LogoComponent />
-          <HeaderComponent headerText={HEADER_TEXT_1} />
-          <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+          <div className="component mobile-comp">
+            <LogoComponent />
+            <HeaderComponent headerText={HEADER_TEXT_1} />
+            <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
+          </div>
         </OnMobile>
 
         <OnDesktop>
