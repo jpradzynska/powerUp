@@ -3,6 +3,8 @@
 
 .home-component {
   background-image: url('../../images/home/bcg-home-below-640.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
   text-align: center;
 
@@ -10,11 +12,7 @@
     height: calc(100vh - 160px);
   }
 
-  .logo-component {
-    margin: 0 auto $base-font-size * 5 auto;
-  }
-
-  .header-component {
+  .logo-component, .header-component {
     margin: 0 auto $base-font-size * 5 auto;
   }
 }

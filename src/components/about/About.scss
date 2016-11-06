@@ -1,7 +1,6 @@
 @import '../../styles/settings';
 
 .about-component {
-  background-image: url('../../images/about/bcg-below-640.jpg');
 
   .facts {
     background-color: $third-color;
@@ -19,25 +18,13 @@
 }
 
 @include susy-breakpoint($third-breakpoint) {
-  .about-component {
-    background-image: url('../../images/about/bcg-640-960.jpg');
-  }
 }
 
 @include susy-breakpoint($fourth-breakpoint) {
-  .about-component {
-    background-image: url('../../images/about/bcg-960-1280.jpg');
-  }
 }
 
 @include susy-breakpoint($fifth-breakpoint) {
-  .about-component {
-    background-image: url('../../images/about/bcg-over-1280.jpg');
-  }
 }
 
 @include susy-breakpoint($sixth-breakpoint) {
-  .about-component {
-    background-size: 100% 100%;
-  }
 }

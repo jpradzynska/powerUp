@@ -30,14 +30,10 @@
 }
 
 @include susy-breakpoint($third-breakpoint) {
-  .contact-component {
-    background-image: url('../../images/contact/bcg-640-960.jpg');
-  }
 }
 
 @include susy-breakpoint($fourth-breakpoint) {
   .contact-component {
-    background-image: url('../../images/contact/bcg-960-1280.jpg');
 
     .contact-address {
       margin: $base-font-size auto;
@@ -58,13 +54,7 @@
 }
 
 @include susy-breakpoint($fifth-breakpoint) {
-  .contact-component {
-    background-image: url('../../images/contact/bcg-over-1280.jpg');
-  }
 }
 
 @include susy-breakpoint($sixth-breakpoint) {
-  .contact-component {
-    background-size: 100% 100%;
-  }
 }

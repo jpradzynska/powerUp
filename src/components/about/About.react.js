@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-parallax';
 import ButtonComponent from '../shared/ButtonComponent.react';
 import HeaderComponent from '../shared/HeaderComponent.react';
 import FactComponent from '../shared/FactComponent.react';
@@ -9,8 +10,38 @@ import './About.scss';
 // import cssmodules from 'react-css-modules';
 // import styles from './About.scss';
 
+const breakpoints = {
+  mobile: 0,
+  third: 640,
+  fourth: 960,
+  desktop: 1280
+};
+
 // @cssmodules(styles)
 class About extends React.Component {
+
+  componentWillMount() {
+    this.updateDimensions();
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => { this.updateDimensions(); });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', () => { this.updateDimensions(); });
+  }
+
+  updateDimensions() {
+    const w = window;
+    const d = document;
+    const documentElement = d.documentElement;
+    const body = d.getElementsByTagName('body')[0];
+    const width = w.innerWidth || documentElement.clientWidth || body.clientWidth;
+    const height = w.innerHeight || documentElement.clientHeight || body.clientHeight;
+
+    this.setState({width, height});
+  }
 
   render() {
     // write the title here
@@ -51,25 +82,39 @@ class About extends React.Component {
       imgSrc: '../../images/about/icon-8.svg',
       title: 'Realised projects'
     };
+
+    let bcgSource;
+    if (this.state.width < breakpoints.third) {
+      bcgSource = '../../images/about/bcg-below-640.jpg';
+    } else if (this.state.width < breakpoints.fourth) {
+      bcgSource = '../../images/about/bcg-640-960.jpg';
+    } else if (this.state.width < breakpoints.desktop) {
+      bcgSource = '../../images/about/bcg-960-1280.jpg';
+    } else {
+      bcgSource = '../../images/about/bcg-over-1280.jpg';
+    }
+
     return (
       <div className="component about-component">
-        <LogoComponent />
-        <HeaderComponent headerText={HEADER_TEXT} />
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
-        <div className="facts">
-          <FactComponent data={fact1}><span>Power UP Game Studio</span><br />Based in Gdańsk, Poland</FactComponent>
-          <FactComponent data={fact2}>January 1, 2016</FactComponent>
-          <FactComponent data={fact3} />
-          <FactComponent data={fact4} />
-        </div>
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>
-        <div className="team">
-          <TeamMemberComponent data={person1} />
-          <TeamMemberComponent data={person2} />
-          <TeamMemberComponent data={person3} />
-        </div>
-        <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3}/>
-        <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
+        <Parallax bgImage={bcgSource} strength={500}>
+          <LogoComponent />
+          <HeaderComponent headerText={HEADER_TEXT} />
+          <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>
+          <div className="facts">
+            <FactComponent data={fact1}><span>Power UP Game Studio</span><br />Based in Gdańsk, Poland</FactComponent>
+            <FactComponent data={fact2}>January 1, 2016</FactComponent>
+            <FactComponent data={fact3} />
+            <FactComponent data={fact4} />
+          </div>
+          <TrianglesTitleComponent titleText={TRIANGLE_TITLE_2}/>
+          <div className="team">
+            <TeamMemberComponent data={person1} />
+            <TeamMemberComponent data={person2} />
+            <TeamMemberComponent data={person3} />
+          </div>
+          <TrianglesTitleComponent titleText={TRIANGLE_TITLE_3}/>
+          <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG} />
+        </Parallax>
       </div>
     );
   }
