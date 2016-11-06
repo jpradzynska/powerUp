@@ -101,7 +101,8 @@ class WebpackBaseConfig {
             test: /^.((?!cssmodule).)*\.css$/,
             loaders: [
               'style',
-              'css'
+              'css',
+              'resolve-url'
             ]
           },
           {
@@ -117,7 +118,9 @@ class WebpackBaseConfig {
             loaders: [
               'style',
               'css',
-              'sass'
+              'sass',
+              'resolve-url',
+              'sass?sourceMap'
             ]
           },
           {
@@ -153,8 +156,16 @@ class WebpackBaseConfig {
             ]
           },
           {
-            test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2)$/,
+            test: /\.(png|jpg|gif|mp4|ogg)$/,
             loaders: ['file']
+          },
+          {
+            test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+          },
+          {
+            test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            loader: 'file?name=font/[name].[ext]'
           },
           {
             test: /\.json$/,

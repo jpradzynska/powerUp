@@ -1,4 +1,7 @@
 @import "~susy/sass/susy";
+@import "webfonts";
+@include fontFace('RobotoMono', 'fonts/RobotoMono/roboto-mono_regular');
+@include fontFace('RobotoMono', 'fonts/RobotoMono/roboto-mono_bold', normal, bold);
 
 $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.2;
