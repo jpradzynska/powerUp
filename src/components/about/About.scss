@@ -1,7 +1,6 @@
 @import '../../styles/settings';
 
 .about-component {
-
   .facts {
     background-color: $third-color;
     width: span(12);
@@ -15,16 +14,4 @@
     width: span(12);
     margin-bottom: $base-font-size * 15;
   }
-}
-
-@include susy-breakpoint($third-breakpoint) {
-}
-
-@include susy-breakpoint($fourth-breakpoint) {
-}
-
-@include susy-breakpoint($fifth-breakpoint) {
-}
-
-@include susy-breakpoint($sixth-breakpoint) {
 }

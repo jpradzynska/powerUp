@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
 import ButtonComponent from '../shared/ButtonComponent.react';
 import HeaderComponent from '../shared/HeaderComponent.react';
 import FactComponent from '../shared/FactComponent.react';
@@ -96,7 +96,11 @@ class About extends React.Component {
 
     return (
       <div className="component about-component">
-        <Parallax bgImage={bcgSource} strength={500}>
+        <Parallax strength={500}>
+          <Background>
+            <img alt="Background" src={bcgSource} />
+          </Background>
+
           <LogoComponent />
           <HeaderComponent headerText={HEADER_TEXT} />
           <TrianglesTitleComponent titleText={TRIANGLE_TITLE_1}/>

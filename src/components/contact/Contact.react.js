@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
 import EmailButtonComponent from '../shared/EmailButtonComponent.react';
 import HeaderComponent from '../shared/HeaderComponent.react';
 import LogoComponent from '../shared/LogoComponent.react';
@@ -61,7 +61,10 @@ class Contact extends React.Component {
 
     return (
       <div className="component contact-component">
-        <Parallax bgImage={bcgSource} strength={500}>
+        <Parallax strength={500}>
+          <Background>
+            <img alt="Background" src={bcgSource} />
+          </Background>
 
           <LogoComponent />
           <HeaderComponent headerText={HEADER_TEXT} />
