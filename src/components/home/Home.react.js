@@ -54,7 +54,6 @@ class Home extends React.Component {
           <div className="btn">
             <ButtonComponent btnAddress={BUTTON_HREF} btnImg={BUTTON_IMG}/>
           </div>
-
         </OnDesktop>
       </div>
     );
